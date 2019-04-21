@@ -1,10 +1,16 @@
 <template>
-  <div>Hello World</div>
+  <div>{{ msg }}</div>
 </template>
 
 <script>
 export default {
-  name: "KitDemo"
+  name: "KitDemo",
+  props: {
+    msg: {
+      type: String,
+      default: "Kit Demo"
+    }
+  }
 };
 </script>
 
