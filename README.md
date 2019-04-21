@@ -1,5 +1,7 @@
 # kit-ui
 
+[![Build Status](https://travis-ci.org/chenweitech/kit-ui.svg?branch=dev)](https://travis-ci.org/chenweitech/kit-ui)
+
 kit-ui是一套基于VUE2.0的组件库，用于补充Element-UI
 
 ## 起步
