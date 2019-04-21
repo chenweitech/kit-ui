@@ -54,8 +54,8 @@ npm install babel-plugin-component -D
 
 ```javascript
 import Vue from 'vue';
-import { KitDemo } from 'jy-required-import';
 import App from './App.vue';
+import { KitDemo } from 'kit-ui';
 
 Vue.component(KitDemo.name, KitDemo);
 /* 或写为
