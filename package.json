@@ -2,6 +2,7 @@
   "name": "kit-ui",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://chenweitech.github.io/kit-ui",
   "main": "lib/kit-ui.umd.min.js",
   "keywords": [
     "kit-ui"
@@ -12,7 +13,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "build:lib": "vue-cli-service build --target lib --name kit-ui --dest lib packages/index.js"
+    "build:lib": "vue-cli-service build --target lib --name kit-ui --dest lib packages/index.js",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -32,6 +34,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "gh-pages": "^2.0.1",
     "highlight": "^0.2.4",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.0.2",
