@@ -14,7 +14,7 @@
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "build:lib": "vue-cli-service build --target lib --name kit-ui --dest lib packages/index.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^2.6.5",
