@@ -1,17 +1,18 @@
 <template>
-  <div>{{ msg }}</div>
+  <input :value="data" @input="e => $emit('change', e.target.value)" />
 </template>
 
 <script>
 export default {
   name: "KitDemo",
+  model: {
+    prop: "data",
+    event: "change"
+  },
   props: {
-    msg: {
-      type: String,
-      default: "Kit Demo"
+    data: {
+      type: String
     }
   }
 };
 </script>
-
-<style></style>

@@ -2,11 +2,13 @@ import { shallowMount } from "@vue/test-utils";
 import KitDemo from "../../packages/demo/index";
 
 describe("KitDemo.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(KitDemo, {
-      propsData: { msg }
-    });
-    expect(wrapper.text()).toMatch(msg);
+  // 测试input事件是否被触发
+  it("render data when input change", () => {
+    const msg = "Hello World";
+    const wrapper = shallowMount(KitDemo);
+    const input = wrapper.find("input");
+    input.element.value = msg;
+    input.trigger("input");
+    expect(wrapper.find("input").emitted().change[0]).toEqual(["Hello World"]);
   });
 });

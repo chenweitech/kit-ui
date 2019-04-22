@@ -24,6 +24,11 @@ export default new Router({
           path: "/guide/quickStart",
           name: "quickStart",
           component: () => import("./docs/quickStart.md")
+        },
+        {
+          path: "/guide/components/kitDemo",
+          name: "kitDemo",
+          component: () => import("./docs/kitDemo.md")
         }
       ]
     }
