@@ -29,6 +29,11 @@ export default new Router({
           path: "/guide/components/kitDemo",
           name: "kitDemo",
           component: () => import("./docs/kitDemo.md")
+        },
+        {
+          path: "/guide/contribution/firstStep",
+          name: "firstStep",
+          component: () => import("./docs/firstStep.md")
         }
       ]
     }

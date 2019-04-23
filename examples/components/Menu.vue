@@ -22,6 +22,14 @@
           </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
+      <el-submenu index="3">
+        <span slot="title">贡献指南</span>
+        <el-menu-item-group>
+          <el-menu-item index="/guide/contribution/firstStep">
+            如何启动项目
+          </el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
     </el-menu>
   </div>
 </template>
