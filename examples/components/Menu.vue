@@ -5,6 +5,7 @@
       :unique-opened="false"
       :default-active="defaultActive"
       :collapse="false"
+      :default-openeds="['1', '2', '3']"
     >
       <el-submenu index="1">
         <span slot="title">开发指南</span>
